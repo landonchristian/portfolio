@@ -105,8 +105,9 @@
 					<video
 						class="featured-video-player"
 						controls
-						preload="metadata"
+						preload="none"
 						playsinline
+						onended="this.load()"
 						poster="images/documentary-thumbnail.jpg">
 
 						<source
