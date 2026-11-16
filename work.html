@@ -89,9 +89,10 @@
                     <div class="project-media">
 						<video
 							controls
-							preload="metadata"
+							preload="none"
 							poster="images/documentary-thumbnail.jpg"
 							playsinline
+							onended="this.load()"
 							aria-label="Sports-documentary-video">
     
 					<source
@@ -138,9 +139,10 @@
                     <div class="project-media">
 						<video
 							controls
-							preload="metadata"
+							preload="none"
 							poster="images/highlight-thumbnail.jpg" 
 							playsinline
+							onended="this.load()"
 							aria-label="Sports-Highlight-Reel-video">
     
 						<source
@@ -186,9 +188,10 @@
     <div class="project-media">
     <video
         controls
-        preload="metadata"
+        preload="none"
         poster="images/sack-2.png"
         playsinline
+		onended="this.load()"
         aria-label="Sports-graphics-showcase-video">
     
         <source
