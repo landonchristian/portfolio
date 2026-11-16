@@ -266,13 +266,15 @@
         </p>
     </footer>
   <script>
-    document.querySelectorAll('video').forEach(video => {
-      video.addEventListener('play', () => {
-        document.querySelectorAll('video').forEach(other => {
-          if (other !== video) other.pause();
-        });
+  document.addEventListener('play', function(e) {
+    if (e.target.tagName === 'VIDEO') {
+      document.querySelectorAll('video').forEach(function(video) {
+        if (video !== e.target) {
+          video.pause();
+        }
       });
-    });
-  </script>
+    }
+  }, true);
+</script>
 </body>
 </html>
